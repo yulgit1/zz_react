@@ -3,4 +3,10 @@ Rails.application.routes.draw do
 
   root to: 'site#index'
 
+  #namespace :filezz1 do
+  #  resources :files, only: [:loadfiles]
+  #end
+
+  get 'loadfiles', to: 'fileszz1/files#loadfiles'
+
 end

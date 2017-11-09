@@ -3,7 +3,7 @@ var Dropfolder = createReactClass({
   render: function() {
       var files= this.props.files.map((file) => {
           return(
-          <p>{file.path}</p>
+          <Dropfile file={file} />
           )
       });
       //var files = this.props.files.length;
